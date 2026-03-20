@@ -771,6 +771,11 @@ def index():
     return send_from_directory(STATIC_DIR, "index.html")
 
 
+@app.get("/about")
+def about():
+    return send_from_directory(STATIC_DIR, "about.html")
+
+
 @app.get("/api/template")
 def download_template():
     template_stream = create_excel_template()

@@ -112,6 +112,20 @@ body {
   padding: 7px 12px;
 }
 
+.hero-actions {
+  margin-top: 16px;
+}
+
+.btn-hero-about {
+  border-color: rgba(255, 255, 255, 0.44);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.btn-hero-about:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+
 .panel {
   background: var(--panel);
   backdrop-filter: blur(8px);
@@ -550,6 +564,36 @@ input[type="color"] {
 
 .reveal:nth-child(6) {
   animation-delay: 450ms;
+}
+
+.about-grid {
+  margin-top: 20px;
+  display: grid;
+  gap: 12px;
+}
+
+.about-item {
+  border: 1px solid rgba(17, 18, 26, 0.14);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.86);
+  padding: 14px;
+}
+
+.about-item h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.about-item p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.about-actions {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 @keyframes rise {
