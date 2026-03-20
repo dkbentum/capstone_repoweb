@@ -1,7 +1,7 @@
-ÿþFlask
+Flask
 pandas
 openpyxl
 Pillow
 pypdf
 reportlab
-xlrd
+xlrd
