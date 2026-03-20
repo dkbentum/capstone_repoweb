@@ -1,0 +1,15 @@
+generated/
+.venv/
+venv/
+__pycache__/
+*.zip
+*.pdf
+.vercel
+node_modules/
+.venv/
+venv/
+generated/
+__pycache__/
+.vercel/
+*.pdf
+*.zip

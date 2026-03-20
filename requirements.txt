@@ -1,0 +1,7 @@
+ÿþFlask
+pandas
+openpyxl
+Pillow
+pypdf
+reportlab
+xlrd

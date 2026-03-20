@@ -1,0 +1,14 @@
+node_modules/
+*.log
+*.env
+*.sqlite
+*.db
+.git/
+
+generated/
+.venv/
+venv/
+__pycache__/
+*.zip
+*.pdf
+.vercel
