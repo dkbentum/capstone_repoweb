@@ -39,7 +39,7 @@ function setStatus(message, type = "") {
   }
 }
 
-function normalizeHexColor(value, fallback = "#1638B7") {
+function normalizeHexColor(value, fallback = "#4F35E8") {
   let hex = String(value || "").trim().toUpperCase();
   if (!hex.startsWith("#")) {
     hex = `#${hex}`;
@@ -114,9 +114,9 @@ function hslToHex(h, s, l) {
 }
 
 function applyPalette(primary, secondary, surface) {
-  const primaryHex = normalizeHexColor(primary, "#1638B7");
-  const secondaryHex = normalizeHexColor(secondary, "#0F2F92");
-  const surfaceHex = normalizeHexColor(surface, "#E8EEFF");
+  const primaryHex = normalizeHexColor(primary, "#4F35E8");
+  const secondaryHex = normalizeHexColor(secondary, "#3620C4");
+  const surfaceHex = normalizeHexColor(surface, "#EDE9FF");
 
   primaryColorInput.value = primaryHex;
   primaryColorHex.value = primaryHex;
@@ -199,7 +199,7 @@ function renderResults(data) {
     const subjectText = Object.entries(student.subject_positions || {})
       .map(([subject, pos]) => `${subject}: ${ordinal(pos)}`)
       .join(" | ");
-    meta.textContent = `${student.student_name}${idText} - Overall ${student.overall_position_label} - Avg ${student.overall_average}${subjectText ? ` - ${subjectText}` : ""}`;
+    meta.textContent = `${student.student_name}${idText} — Overall ${student.overall_position_label} — Avg ${student.overall_average}${subjectText ? ` — ${subjectText}` : ""}`;
 
     const anchor = document.createElement("a");
     anchor.href = student.pdf_url;
@@ -289,9 +289,9 @@ templateRadios.forEach((radio) => {
   radio.addEventListener("change", refreshTemplateCards);
 });
 
-bindColorPair(primaryColorInput, primaryColorHex, "#1638B7");
-bindColorPair(secondaryColorInput, secondaryColorHex, "#0F2F92");
-bindColorPair(surfaceColorInput, surfaceColorHex, "#E8EEFF");
+bindColorPair(primaryColorInput, primaryColorHex, "#4F35E8");
+bindColorPair(secondaryColorInput, secondaryColorHex, "#3620C4");
+bindColorPair(surfaceColorInput, surfaceColorHex, "#EDE9FF");
 
 randomPaletteBtn.addEventListener("click", randomizePalette);
 
