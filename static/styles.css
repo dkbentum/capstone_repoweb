@@ -114,6 +114,8 @@ body {
 
 .hero-actions {
   margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .btn-hero-about {
@@ -124,6 +126,17 @@ body {
 
 .btn-hero-about:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+
+.hero-about-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.hero-about-link:hover {
+  text-decoration: underline;
 }
 
 .panel {
@@ -596,6 +609,63 @@ input[type="color"] {
   gap: 10px;
 }
 
+.about-hero-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-hero-row h1 {
+  margin: 0;
+}
+
+.story-copy {
+  margin-top: 16px;
+}
+
+.story-copy p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.75;
+  max-width: 88ch;
+}
+
+.story-copy p + p {
+  margin-top: 10px;
+  line-height: 1.65;
+}
+
+.makers-note {
+  margin: 14px 0 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.makers-grid {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px 14px;
+}
+
+.maker-link {
+  display: inline;
+  text-decoration: none;
+  color: #123ea3;
+  font-weight: 700;
+  transition: color 120ms ease;
+}
+
+.maker-link:hover {
+  color: #0b2f83;
+  text-decoration: underline;
+}
+
 @keyframes rise {
   to {
     opacity: 1;
@@ -607,6 +677,10 @@ input[type="color"] {
   .logo-controls,
   .color-grid,
   .template-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .makers-grid {
     grid-template-columns: 1fr;
   }
 
